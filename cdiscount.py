@@ -4,7 +4,20 @@ Created on Wed Jun 03 17:55:07 2015
 
 @author: janczakp
 """
-
+/*
+* Description du programme et de l'algorithme
+*
+* nettoyage des données (transformer en minuscules, sans accent français, ponctuation qui peuvent toucher les mots: 
+* parenthèses virgules etc...) suppression des mots non significatifs (le la les du des etc...)
+* transformation des mots en singulier (suppresion du s final sauf certains mots comme VHS ou coloris, 
+* suppression du x final s'il ne s'agit d'une exception type cheval travail, 
+* les exceptions sont gérées dans des cas à part entière)
+* comparaison de chaque mot (description + libellé) avec chaque mot des catégories 1, 2 et 3 réunies), 
+* un compteur est incrémenté à chaque foi que la comparaison renvoie vrai (sans pondération entre les catégories.
+* la classifcation est choisie pour le couple produit-catégorie dont le compteur est le plus élévé. 
+* ne gère pas les ex-aequo pour l'instant
+*/
+                                                                           
 import csv
 import time
 
