@@ -4,6 +4,11 @@ Created on Fri Apr 24 15:35:04 2015
 
 @author: janczakp
 """
+
+/*
+* This program is an application of linear regression model using the least squares method
+*/
+
 from math import sqrt
 import numpy as np
 import matplotlib.pyplot as plt
